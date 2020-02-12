@@ -1,0 +1,23 @@
+.card-detail-link {
+  color: rgba(0, 0, 0, .54);
+  font-size: 14px;
+  text-transform: none;
+  text-decoration: none;
+}
+
+mat-card-title, mat-card-subtitle, .mat-card-image {
+  cursor: pointer;
+}
+.mat-card-avatar {
+  margin-bottom: 10px;
+}
+
+img {
+  width: 100%;
+  // height: auto;
+}
+
+p {
+  padding: 10px;
+  font-family: cursive;
+}

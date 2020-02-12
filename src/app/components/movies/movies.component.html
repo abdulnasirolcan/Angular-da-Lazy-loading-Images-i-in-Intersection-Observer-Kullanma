@@ -1,0 +1,35 @@
+<div fxLayout="row" style="height: 90vh;">
+  <div fxFlex="1" fxFlex.gt-sm="1"></div>
+  <div fxFlex="99" fxFlex.gt-sm="99">
+      <ng-container *ngFor="let card of secondCards; trackBy: trackById">
+        <div fxFlex="50" fxFlex.gt-sm="50" fxFlexOffset="20px" fxFlexOffset.xs="0">
+          <app-card *ngIf="card" [card]="card"></app-card>
+        </div>
+      </ng-container>
+  </div>
+  <div fxFlex="1" fxFlex.gt-sm="1"></div>
+</div>
+
+<div fxLayout="row" style="height: 90vh;">
+    <div fxFlex="1" fxFlex.gt-sm="1"></div>
+    <div fxFlex="99" fxFlex.gt-sm="99">
+        <ng-container *ngFor="let card of firstCards; trackBy: trackById">
+          <div fxFlex="50" fxFlex.gt-sm="50" fxFlexOffset="20px" fxFlexOffset.xs="0">
+            <app-card *ngIf="card" [card]="card"></app-card>
+          </div>
+        </ng-container>
+    </div>
+    <div fxFlex="1" fxFlex.gt-sm="1"></div>
+  </div>
+
+  <div fxLayout="row" style="height: 90vh;">
+    <div fxFlex="1" fxFlex.gt-sm="1"></div>
+    <div fxFlex="99" fxFlex.gt-sm="99">
+        <ng-container *ngFor="let card of thirdCards; trackBy: trackById">
+          <div fxFlex="50" fxFlex.gt-sm="50" fxFlexOffset="20px" fxFlexOffset.xs="0">
+            <app-card *ngIf="card" [card]="card"></app-card>
+          </div>
+        </ng-container>
+    </div>
+    <div fxFlex="1" fxFlex.gt-sm="1"></div>
+  </div>

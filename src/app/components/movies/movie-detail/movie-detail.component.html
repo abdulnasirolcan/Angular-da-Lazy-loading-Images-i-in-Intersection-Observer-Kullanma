@@ -1,0 +1,7 @@
+<div fxLayout="row">
+    <div fxFlex="10" fxFlex.gt-sm="10"></div>
+    <div fxFlex="80" fxFlex.gt-sm="80">
+        <app-card *ngIf="cardDetailArrayToObject" [card]="cardDetailArrayToObject" [buttonBack]="true"></app-card>
+    </div>
+    <div fxFlex="10" fxFlex.gt-sm="10"></div>
+</div>

@@ -1,1 +1,97 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin:0;
+}
+html {
+  background-color: #f0f0f0;
+}
+body {
+  color: #999999;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0!important;
+  letter-spacing: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga" on;
+}
+
+section {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+section:nth-child(even) {
+  background-color: var(--primary);
+}
+
+section:nth-child(odd) {
+  background-color: var(--accent);
+}
+
+h1, h2 {
+  margin-bottom: 2rem;
+}
+
+.header__title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.flex-spacer {
+  flex-grow: 1;
+}
+
+
+.hero-actions {
+  align-items: center;
+  display: flex;
+  padding-bottom: 1rem;
+}
+
+.text--center {
+  text-align: center;
+}
+
+.text--right {
+  text-align: right;
+}
+
+.offline-error {
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 1rem;
+  text-align: center;
+
+  span {
+    transform: rotate(90deg);
+    font-size: 0.8rem;
+    display: inline-flex;
+  }
+}
+
+.language-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  display: block;
+}
+
+.pl-20 {
+  padding-left: 20px;
+}
+
+.pr-20 {
+  padding-right: 20px;
+}

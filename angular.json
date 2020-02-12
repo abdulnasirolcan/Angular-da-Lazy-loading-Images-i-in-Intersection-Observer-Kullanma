@@ -23,12 +23,31 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": false,
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "extractCss": true,
             "styles": [
-              "src/styles.scss"
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "src/styles.scss",
+              {
+                "input": "src/styles/movies.scss",
+                "bundleName": "movies",
+                "lazy": true
+              },
+              {
+                "input": "src/styles/movie-detail.scss",
+                "bundleName": "movie-detail",
+                "lazy": true
+              },
+              {
+                "input": "src/styles/documentaries.scss",
+                "bundleName": "documentaries",
+                "lazy": true
+              },
+              {
+                "input": "src/styles/documentaries-detail.scss",
+                "bundleName": "documentaries-detail",
+                "lazy": true
+              }
             ],
             "scripts": []
           },
@@ -83,13 +102,8 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.scss"],
             "scripts": []
           }
         },
@@ -101,9 +115,7 @@
               "tsconfig.spec.json",
               "e2e/tsconfig.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         },
         "e2e": {
@@ -119,6 +131,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "lazy-load-image"
 }
